@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+/* header */
+header .container-fluid {
+  background-color: #d4cbcb;
+  height: 60px;
+}
+.label {
+  line-height: 60px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: blue;
+  font-style: italic;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+/* Shopping cart*/
+.cart-list {
+  margin: 50px auto;
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  row-gap: 50px;
+  column-gap: 50px;
+  align-items: stretch;
+  grid-template-columns: auto auto;
+}
+.cart-item {
+  background-color: rgb(201, 190, 190);
+  height: 150px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  color: black;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.cart-item img {
+  width: 70px;
+  display: block;
+  background-color: aqua;
+  font-size: 1.3rem;
+}
+
+.cart-action {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.plus {
+  color: green;
+  cursor: pointer;
+}
+
+.minus {
+  color: red;
+  cursor: pointer;
+}
+
+.total-price {
+  text-align: center;
+}
+/*--------------------------------------------------------------------------------*/
+
+/* Favs */
+
+.fav-item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 275px;
+  height: 300px;
+  margin-right: 10px;
+  padding: 16px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  z-index: 2;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in;
+  background-color: rgb(201, 190, 190);
+}
+.fav-item img {
+  width: 100px;
+  object-fit: fill;
+}
+.fa-heart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+}
+.favs {
+  align-items: flex-end;
+  justify-content: start;
+  margin: 15px 0px;
+  height: 400px;
+  display: flex;
+  overflow-y: visible;
+  overflow-x: auto;
+}
+.container h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+.line {
+  height: 3px;
+  width: 30px;
+  margin: 10px auto 0px auto;
+  background-color: red;
+}
+
+.fav-item:hover {
+  border: 0.8px red solid;
+  transform: translate(0, -10px);
+}
+.container {
+  overflow: visible;
+}

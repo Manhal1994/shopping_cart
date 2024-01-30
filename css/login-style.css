@@ -1,0 +1,15 @@
+header .container-fluid {
+  background-color: #d4cbcb;
+  height: 60px;
+}
+.label {
+  line-height: 60px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: blue;
+  font-style: italic;
+}
+
+.form label {
+  font-weight: bold;
+}
